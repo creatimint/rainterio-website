@@ -1,108 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Rinterio</title>
 
     <!-- font-awesome -->
     <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
-  >
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
-  >
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
+    />
+  </head>
+  <body class="manrope-font">
+    <header class="p-5 md:p-8 lg:pt-12">
+      <!-- nav-bar -->
+      <nav class="flex justify-between items-center width">
+        <div class="flex items-center gap-2">
+          <div
+            class="w-8 h-8 rounded-full bg-[#ABEF5F] flex items-center justify-center"
+          >
+            <i class="fa-regular fa-arrow-right -rotate-45"></i>
+          </div>
+          <h3 class="font-extrabold text-3xl">Renterio</h3>
+        </div>
+        <ul class="flex gap-9 hidden lg:inline-flex">
+          <li>Home</li>
+          <li>Services</li>
+          <li>Portfolio</li>
+          <li>Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+        <div class="items-center gap-4 flex justify-center">
+          <div class="hidden md:inline-flex gap-4 items-center">
+            <button
+              class="w-12 h-12 rounded-full border border-gray-300 bg-white"
+            >
+              <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+            </button>
+            <button
+              class="w-12 h-12 rounded-full border border-gray-300 bg-white"
+            >
+              <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+            </button>
+            <button class="btn-primary flex justify-center gap-2">
+              Book Consultant
+              <div class="w-8 h-8 rounded-full bg-black">
+                <i class="fa-regular fa-arrow-right -rotate-45 text-white"></i>
+              </div>
+            </button>
+          </div>
+          <div
+            class="w-12 h-12 rounded-full border border-gray-300 bg-white lg:hidden flex items-center justify-center"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
 
+      <!-- hero-section -->
+      <section
+        class="width pt-12 pb-10 md:pb-24 flex flex-col items-center gap-6"
+      >
+        <!-- img-container -->
+        <div>
+          <img src="./assets/banner.png" alt="" />
+        </div>
 
-    <style type="text/tailwindcss">
-        @theme {
-          --color-clifford: #da373d;
-          --primary-color: '#ABEF5F';
-        }
-      </style>
-</head>
-<body class="manrope-font">
-    <!-- hero section -->
-    <header class="md:py-16px p-6">
-        <nav class="flex justify-between items-center border border-red-500 width">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 rounded-full bg-[#ABEF5F] flex items-center justify-center"><i class="fa-regular fa-arrow-right -rotate-45"></i></div>
-                <h3 class="font-extrabold text-3xl">Renterio</h3>
+        <!-- text-container-->
+        <div class="text-center items-center flex flex-col gap-6">
+          <h1 class="lg:text-6xl text-3xl md:text-4xl font-extrabold black-1">
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="w-5/7">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button class="btn-primary flex justify-center gap-2">
+            View Details
+            <div class="w-8 h-8 rounded-full bg-black">
+              <i class="fa-regular fa-arrow-right -rotate-45 text-white"></i>
             </div>
-            <ul class="flex gap-9 hidden lg:inline-flex">
-                <li>Home</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Blogs</li>
-                <li>Contact Us</li>
-            </ul>
-            <div class="items-center gap-4 flex justify-center">
-                <div class="hidden md:inline-flex gap-4 items-center">
-                  <button class="w-12 h-12 rounded-full border border-gray-300 bg-white"><i class="fa-sharp fa-regular fa-magnifying-glass"></i></button>
-                  <button class="w-12 h-12 rounded-full border border-gray-300 bg-white"><i class="fa-sharp fa-regular fa-cart-shopping"></i></button>
-                  <button class="btn-primary flex justify-center gap-2">Book Consultant <div class="w-8 h-8 rounded-full bg-black"><i class="fa-regular fa-arrow-right -rotate-45 text-white"></i></div></button>
-                </div>
-                <div class="w-12 h-12 rounded-full border border-gray-300 bg-white lg:hidden flex items-center justify-center">
-                  <i class="fa-solid fa-bars"></i>
-                </div>
-            </div>
-        </nav>
+          </button>
+        </div>
+      </section>
     </header>
-    
-</body>
+    <main>
+      <!-- about us section -->
+      <section class="bg-gray-200">
+        <div class="p-5 md:p-8 lg:p-0">
+          <div
+            class="flex justify-between items-center width grid grid-cols-1 lg:grid-cols-2 py-24 relative gap-6 lg:gap-0"
+          >
+            <img
+              class="absolute top-10 -left-16"
+              src="./assets/Vector.png"
+              alt=""
+            />
+            <!-- text-content -->
+            <div class="lg:w-9/10">
+              <div
+                class="bg-white rounded-full px-4 py-2 flex items-center w-[128px] mb-4 gap-3"
+              >
+                <i class="fa-sharp fa-regular fa-arrow-right"></i> About us
+              </div>
+
+              <h3
+                class="lg:text-4xl md:text-3xl text-2xl font-bold black-1 md:mb-6 mb-4"
+              >
+                We design thoughtful, liveable spaces
+              </h3>
+              <p class="black-2 mb-6">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+
+              <!-- card -->
+              <div class="flex flex-col md:flex-row lg:flex-col gap-4 md:gap-6">
+                <div
+                  class="flex gap-4 items-center rounded-xl shadow-xl p-6 bg-white"
+                >
+                  <img src="./assets/commercial.png" alt="" />
+                  <div>
+                    <h4 class="black-2 font-bold md:text-lg lg:font-xl mb-3">
+                      Commercial
+                    </h4>
+                    <p class="black-3">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex gap-4 items-center rounded-xl shadow-xl p-6 bg-white"
+                >
+                  <img src="./assets/commercial.png" alt="" />
+                  <div>
+                    <h4 class="black-2 font-bold md:text-lg mb-3">
+                      Commercial
+                    </h4>
+                    <p class="black-3">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- image-content -->
+            <div class="h-[223px] md:h-[385px] lg:h-[560px]">
+              <img
+                class="w-full h-full object-cover rounded-2xl"
+                src="./assets/Rectangle.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project number section -->
+      <section class="bg-gray-200 pb-24">
+        <div class="width bg-white rounded-2xl">
+          <div class="p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- card-1 -->
+            <div class="text-center p-5">
+              <i class="text-4xl fa-light black-3 fa-messages mb-5"></i>
+              <h4 class="text-3xl black-2 font-bold lg:text-4xl">235+</h4>
+              <p class="black-3">Happy Client Review</p>
+            </div>
+            <!-- card-2 -->
+            <div class="text-center p-5">
+              <i class="text-4xl fa-sharp fa-light fa-building-memo mb-5 black-3"></i>
+              <h4 class="text-3xl black-2 font-bold lg:text-4xl">50+</h4>
+              <p class="black-3">Work Departments</p>
+            </div>
+            <!-- card-3 -->
+            <div class="text-center p-5">
+              <i class="text-4xl fa-light fa-users mb-5 black-3 "></i>
+              <h4 class="text-3xl black-2 font-bold lg:text-4xl">30k+</h4>
+              <p class="black-3">Our Happy Client</p>
+            </div>
+            <!-- card-4 -->
+            <div class="text-center p-5">
+              <i class="text-4xl fa-light fa-user-plus mb-5 black-3"></i>
+              <h4 class="text-3xl black-2 font-bold lg:text-4xl">307+</h4>
+              <p class="black-3">Staff Members</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

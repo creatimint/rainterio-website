@@ -16,3 +16,19 @@
     max-width: 1170px;
     margin: 0 auto;
 }
+.black-1{
+    color: #212121;
+}
+.black-2{
+    color: #494949;
+}
+.black-3{
+    color: #737373;
+}
+.light-green{
+    background-color: rgba(171, 239, 95, 0.5);
+}
+.sub-headline{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
