@@ -12,9 +12,17 @@
     padding: 12px 20px;
     border-radius: 50px;
 }
+.btn-secondary{
+    font-weight: 700;
+    /* padding: 12px 20px; */
+    border-radius: 50px;
+}
 .width{
     max-width: 1170px;
     margin: 0 auto;
+}
+.primary-color{
+    background-color: #ABEF5F;
 }
 .black-1{
     color: #212121;
